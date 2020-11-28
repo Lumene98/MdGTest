@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MarkdownService } from 'ngx-markdown';
 
-import { Taco } from '../models/taco.model'
+import { Taco } from './taco'
 
 import { TacoService } from '../services/taco.service';
 
@@ -15,12 +16,6 @@ export class TacoComponent implements OnInit {
   constructor(private service: TacoService) { }
 
   ngOnInit(): void {
-    this.getTaco();
+     this.service.getTaco().subscribe(taco => this.taco = taco);
   }
-
-  getTaco(): void {
-    this.service.getTaco()
-    .subscribe( taco => this.taco = taco);
-  }
-
 }

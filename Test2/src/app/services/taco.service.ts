@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 
-import { Taco } from '../models/taco.model';
+import { Taco } from '../taco/taco';
 
 @Injectable({
   providedIn: 'root'
@@ -14,12 +14,12 @@ export class TacoService {
   constructor(private http: HttpClient) { }
 
   getTaco(): Observable<Taco> {
-   return this.http.get<Taco>(this.tacoUrl)
+   return this.http.get<Taco>(this.tacoUrl,)
       .pipe(
-        tap(_ => console.log('Got a taco!')),
+        tap(_ => console.log('Got a taco!', _))
       );
   }
-
+  
 }
 
   
