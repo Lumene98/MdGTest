@@ -1,52 +1,64 @@
 .wrapper {
-    top: 100px;
-    position: absolute;
+    position: relative;
     display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
+    text-align: left;
+    max-width: 1080px;
+    color: #fff;
+    margin: 40px auto 0 auto;
 }
 
-.recipeWrapper {
+.recipe-wrapper {
     display: flex;
     text-align: center;
     flex-direction: column;
 }
 
 .card {
-    border: 1px solid gray;
     border-radius: 20px;
-    margin-bottom: 30px;
-    padding: 30px 20px
+    padding: 30px 0 0 20px
 }
 
 .title {
     display: flex;
-    justify-content: center;
-    
+    justify-content: flex-start;
+    padding-left: 8px;    
 }
 
 .title h1:first-child {
-    color: #ff5722;
+    color: #ff8a00;
 }
 
 .title h1{
     margin-right: 20px;
 }
 
-.getNew {
+.get-new {
     display: block;
     cursor: pointer;
     outline: none;
     border: none;
-    background-color: #ff5722;
+    background-color: #ff8a00;
     width: 400px;
     height: 70px;
     border-radius: 30px;
     font-size: 1.5rem;
     font-weight: 300;
-    color: white;
+    color: black;
     background-size: 100% 100%;
-    box-shadow: 0 0 0 7px #ff5722 inset;
+    box-shadow: 0 0 0 7px #ff8a00 inset;
     margin-bottom: 15px;
+}
+
+.recipe-wrapper p {
+    white-space: pre-line;
+    text-align: left;
+    border-left: 2px solid #fff;
+    margin-left: 8px;
+    margin-top: 16px;
+    padding-left: 16px;
+    font-size: 1.3em;
+    font-weight: 400;
 }
