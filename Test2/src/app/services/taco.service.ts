@@ -16,7 +16,7 @@ export class TacoService {
   getTaco(): Observable<Taco> {
    return this.http.get<Taco>(this.tacoUrl,)
       .pipe(
-        tap(_ => console.log('Got a taco!', _))
+        tap(_ => console.log('Got a taco!'))
       );
   }
   
