@@ -10,7 +10,10 @@ import { TacoComponent } from './taco/taco.component';
     BrowserModule,
     HttpClientModule,
   ],
-  declarations: [AppComponent, TacoComponent],
+  declarations: [
+    AppComponent,
+    TacoComponent
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
