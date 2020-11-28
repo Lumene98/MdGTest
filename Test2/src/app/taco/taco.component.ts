@@ -1,7 +1,7 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { Subscription } from 'rxjs';
 
-import { Taco } from './taco'
+import { Taco } from './taco';
 
 import { TacoService } from '../services/taco.service';
 
@@ -12,14 +12,14 @@ import { TacoService } from '../services/taco.service';
 })
 export class TacoComponent implements OnInit {
   taco: Taco;
-  loading: boolean = false;
+  loading = false;
   subscription: Subscription;
 
   constructor(private tacoService: TacoService, private detector: ChangeDetectorRef) { }
 
   ngOnInit(): void {
      this.loading = true;
-     this.subscription = this.tacoService.getTaco().subscribe({ 
+     this.subscription = this.tacoService.getTaco().subscribe({
         next: taco => this.taco = taco,
         complete: () => this.stopLoading()
       });
@@ -27,12 +27,12 @@ export class TacoComponent implements OnInit {
 
   stopLoading(): void{
     this.loading = false;
-    this.detector.detectChanges() 
-    this.subscription.unsubscribe()
+    this.detector.detectChanges();
+    this.subscription.unsubscribe();
   }
 
   fetchNew(): void{
-     this.tacoService.getTaco().subscribe({ 
+     this.tacoService.getTaco().subscribe({
         next: taco => this.taco = taco,
         complete: () => this.stopLoading()
       });

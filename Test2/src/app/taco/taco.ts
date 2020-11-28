@@ -1,32 +1,32 @@
 export interface Taco {
-  base_layer:{
+  base_layer: {
       url: string;
       slug: string;
       name: string;
       recipe: string;
   };
-  shell : {
+  shell: {
       url: string;
       slug: string;
       name: string;
       recipe: string;
   };
-  seasoning : {
+  seasoning: {
       url: string;
       slug: string;
       name: string;
       recipe: string;
   };
-  mixin : {
+  mixin: {
       url: string;
       slug: string;
       name: string;
       recipe: string;
   };
-  condiment : {
+  condiment: {
       url: string;
       slug: string;
       name: string;
       recipe: string;
-  }
+  };
 }

@@ -14,12 +14,11 @@ export class TacoService {
   constructor(private http: HttpClient) { }
 
   getTaco(): Observable<Taco> {
-   return this.http.get<Taco>(this.tacoUrl,)
+   return this.http.get<Taco>(this.tacoUrl)
       .pipe(
         tap(_ => console.log('Got a taco!'))
       );
   }
-  
+
 }
 
-  
