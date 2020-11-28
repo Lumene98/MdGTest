@@ -4,7 +4,13 @@
     display: flex;
     text-align: center;
     flex-direction: column;
-    margin: 0 35rem;
+    align-items: center;
+}
+
+.recipeWrapper {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
 }
 
 .card {
@@ -26,4 +32,21 @@
 
 .title h1{
     margin-right: 20px;
+}
+
+.getNew {
+    display: block;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #ff5722;
+    width: 400px;
+    height: 70px;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+    background-size: 100% 100%;
+    box-shadow: 0 0 0 7px #ff5722 inset;
+    margin-bottom: 15px;
 }
