@@ -1,1 +1,42 @@
-<p>taco works!</p>
+<div ngClass="wrapper" ng-cloak>
+    <div class="card">
+        <div class="title">
+            <h1>Base Layer:</h1>
+            <h1>{{taco.base_layer.name}}</h1>
+        </div>
+        <span>{{taco.base_layer.slug}}</span>
+        <p>{{taco.base_layer.recipe}}</p>
+    </div>
+    <div class="card">
+        <div class="title">
+            <h1>Condiment:</h1>
+            <h1>{{taco.condiment.name}}</h1>
+        </div>
+        <span>{{taco.condiment.slug}}</span>
+        <p>{{taco.condiment.recipe}}</p>    
+    </div>
+    <div class="card">
+        <div class="title">
+            <h1>Mixin:</h1>
+            <h1>{{taco.mixin.name}}</h1>
+        </div>
+        <span>{{taco.mixin.slug}}</span>
+        <p>{{taco.mixin.recipe}}</p>    
+    </div>
+    <div class="card">
+        <div class="title">
+            <h1>Seasoning:</h1>
+            <h1>{{taco.seasoning.name}}</h1>
+        </div>
+        <span>{{taco.seasoning.slug}}</span>
+        <p>{{taco.seasoning.recipe}}</p>    
+    </div>
+    <div class="card">
+        <div class="title">
+            <h1>Shell:</h1>
+            <h1>{{taco.shell.name}}</h1>
+        </div>
+        <span>{{taco.shell.slug}}</span>
+        <p>{{taco.shell.recipe}}</p>    
+    </div>
+</div>

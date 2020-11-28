@@ -1,0 +1,29 @@
+.wrapper {
+    top: 100px;
+    position: absolute;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 35rem;
+}
+
+.card {
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 30px 20px
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.title h1:first-child {
+    color: #ff5722;
+}
+
+.title h1{
+    margin-right: 20px;
+}
