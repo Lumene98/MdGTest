@@ -1,6 +1,6 @@
 <div class="wrapper">
-    <button (click)="fetchNew()" class="get-new" ng-disabled="loading">Get a new Taco!</button>
-    <div class="recipe-wrapper" *ngIf="!loading">
+    <button (click)="fetchNew()" class="get-new">Get a new Taco!</button>
+    <div class="recipe-wrapper" *ngIf="taco">
         <div class="card">
             <div class="title">
                 <h1>Base Layer:</h1>
